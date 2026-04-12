@@ -241,12 +241,7 @@ body {
         height: auto;
     }
 
-    .image img {
-        width: 200px;
-        height: 200px;
-        margin-top: 20px;
-    }
-
+    
     /* PROJECTS */
     .project-container {
         flex-direction: column;

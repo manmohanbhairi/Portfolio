@@ -82,9 +82,7 @@
             </p>
         </div>
 
-        <div class="about-img">
-            <img src="assets/images/profile.jpeg" alt="My Photo">
-        </div>
+        
 
     </div>
 
@@ -93,16 +91,15 @@
 <section class="contact">
 
     <h2>Contact me</h2>
+<form class="contact-form" action="ContactServlet" method="post">
 
-    <form class="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
 
-        <input type="text" placeholder="manmohanbhairi@gmail.com" required>
-        <input type="email" placeholder="manmohanbhairi@gmail.com" required>
-        <textarea placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit">Send Message</button>
 
-        <button type="submit">Send Message</button>
-
-    </form>
+</form>
 
 </section>
 
