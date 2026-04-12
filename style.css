@@ -5,6 +5,10 @@
     font-family: Arial, sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: linear-gradient(135deg, #e3f2fd, #9575cd, #5e35b1);
     color: white;
@@ -31,16 +35,29 @@ body {
     text-decoration: none;
 }
 
+.navbar a:hover {
+    color: #ffd54f;
+}
+
 /* HERO */
 .hero {
     height: 85vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 20px;
 }
 
 .content h1 {
     font-size: 50px;
+}
+
+.buttons {
+    margin-top: 15px;
+}
+
+.buttons a {
+    margin-right: 10px;
 }
 
 /* IMAGE */
@@ -58,6 +75,11 @@ body {
     border-radius: 5px;
     color: black;
     text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
 }
 
 .btn-outline {
@@ -65,27 +87,11 @@ body {
     padding: 10px 20px;
     color: white;
     text-decoration: none;
+    transition: 0.3s;
 }
 
-/* PROJECTS */
-.projects {
-    padding: 50px;
-    text-align: center;
-    background: rgba(0,0,0,0.1);
-}
-
-.project-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.card {
-    background: white;
-    color: black;
-    padding: 20px;
-    width: 250px;
-    border-radius: 10px;
+.btn-outline:hover {
+    transform: scale(1.1);
 }
 
 /* ABOUT */
@@ -105,32 +111,7 @@ body {
     max-width: 600px;
 }
 
-/* CONTACT */
-.contact {
-    padding: 60px;
-    text-align: center;
-}
-
-.contact-form {
-    max-width: 400px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-}
-
-.contact-form input,
-.contact-form textarea {
-    margin: 10px 0;
-    padding: 10px;
-}
-
-.contact-form button {
-    background: #ffd54f;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-}
-
+/* SKILLS */
 .skills {
     padding: 50px;
     text-align: center;
@@ -148,4 +129,51 @@ body {
     color: black;
     padding: 10px 15px;
     border-radius: 20px;
+}
+
+/* PROJECTS */
+.projects {
+    padding: 50px;
+    text-align: center;
+    background: rgba(0,0,0,0.1);
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    color: black;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    background: #5e35b1;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* CONTACT */
+.contact {
+    padding: 60px;
+    text-align: center;
+}
+
+.contact-info p {
+    margin: 10px 0;
 }
