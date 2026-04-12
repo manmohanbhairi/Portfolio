@@ -42,7 +42,7 @@ body {
 
 /* HERO */
 .hero {
-    height: 85vh;
+    min-height: 100vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -53,23 +53,31 @@ body {
     font-size: 50px;
 }
 
-.buttons {
-    margin-top: 15px;
-}
-
-.buttons a {
-    margin-right: 10px;
+.typing {
+    margin-top: 10px;
 }
 
 /* IMAGE */
 .image img {
-    width: 280px;
-    height: 280px;
+    width: 260px;
+    height: 260px;
     border-radius: 50%;
     object-fit: cover;
 }
 
 /* BUTTONS */
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.buttons a {
+    display: inline-block;
+    text-align: center;
+}
+
 .btn {
     background: #ffd54f;
     padding: 10px 20px;
@@ -80,7 +88,7 @@ body {
 }
 
 .btn:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .btn-outline {
@@ -92,7 +100,7 @@ body {
 }
 
 .btn-outline:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 /* ABOUT */
@@ -179,38 +187,45 @@ body {
     margin: 10px 0;
 }
 
-/* 🔥 RESPONSIVE DESIGN */
+/* 🔥 MOBILE FIX (IMPORTANT) */
 @media (max-width: 768px) {
 
     .navbar {
         flex-direction: column;
         align-items: center;
+        padding: 15px;
     }
 
     .navbar ul {
         margin-top: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .hero {
         flex-direction: column;
         text-align: center;
-        height: auto;
-    }
-
-    .image img {
-        width: 200px;
-        height: 200px;
-        margin-top: 20px;
+        padding: 40px 20px;
     }
 
     .content h1 {
-        font-size: 32px;
+        font-size: 30px;
+    }
+
+    .image img {
+        width: 180px;
+        height: 180px;
+        margin-top: 20px;
     }
 
     .buttons {
-        display: flex;
         flex-direction: column;
-        gap: 10px;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .buttons a {
+        width: 200px;
     }
 
     .project-container {
